@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>LogIn Page Administrator</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <script src="js/jquery2.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--Css Code -->
+    <link href="css/global.css" type="text/css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+
+    <link rel="stylesheet" href="css/header-login-signup.css">
+
+    </head>
+<body>
+<!-- headerwrapper-->
+
+<header class="header-login-signup">
+
+    <div class="header-limiter">
+        <h1><a href="#"><img src="images/LOGO4.png" alt="logo" width="460" height="85"></a></h1>
+        <ul>
+            <li><a href="#watashi" onclick="logged()">Login</a></li>
+            <li><a href="https://www.google.com/">Sign up</a></li>
+        </ul>
+
+    </div>
+
+</header>
+
+    <p>S<br/>S</p>
+    <p>S<br/>S</p>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">SPACE alert</div>
+            <div class="col-md-8" id="signup_msg">
+                <!--Alert from signup form-->
+            </div>
+            <div class="col-md-2">SPACE KANAN</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">SPACE KIRI</div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-custom">LOG IN</div>
+                    <div class="panel-body">
+                <!--Login form-->
+
+                        <form method="post">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email"class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="password">password</label>
+                                <input type="password" id="password" name="password"class="form-control">
+                            </div>
+                        </div>
+                        <p><br/></p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input style="float:right;" value="Log In" type="button" id="login_button" name="login_button" class="btn btn-success">
+
+                            </div>
+                        </div>
+
+                    </div>
+                    </form>
+
+                    </div>
+                </div>
+            <div class="col-md-4">SPACE BWAH</div>
+            </div>
+
+    </div>
+</body>
+
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        getdata();
+        function getdata(){
+            $.AJAX({
+                url: "action.php",
+                method : "POST",
+                data : {getproduct:1},
+                success : function(data){
+                    $(#g_product).html(data);
+                }
+
+            })
+        }
+    })
+
+</script>
+</html>

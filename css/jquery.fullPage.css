@@ -24,6 +24,9 @@ html, body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.slidevid{
+    display: inline-block;
+}
 .slide {
     float: left;
 }
