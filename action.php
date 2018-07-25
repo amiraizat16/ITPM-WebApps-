@@ -69,12 +69,16 @@ if(isset($_POST["getProduct"])){
 			echo "
 				<div class='col-md-4'>
 							<div class='panel panel-info' style='font-family:Economica-bold;'>
-								<div class='panel-heading'>$pro_title</div>
+								<div class='panel-heading' style='text-align: center; color: white;background-color: #ff5a0b;'>$pro_title</div>
 								<div class='panel-body'>
 									<img src='product_images/$pro_image' style='width:160px; height:250px;'/>
 								</div>
-								<div class='panel-heading'>RM$pro_price
-									<button pid='$pro_id' style='float:right;' id='product' class='btn btn-danger btn-xs'>AddToCart</button>
+								<div class='panel-heading' style='line-height: 25px;color: white;background-color: #ff5a0b;'>RM$pro_price
+
+									<div class='quantity buttons_added' style='float:right; color:#e11b1b; '>		  		
+								  		<input id='theInput' type='number' size='4' class='input-text qty text' title='Qty' value='0' min='0' step='1' style='width: 50%; float:right'> 
+									</div>
+
 								</div>
 							</div>
 						</div>

@@ -11,6 +11,7 @@ session_start();
    <script src="js/jquery.js"></script> 
 	<script src="js/jquery.glide.js"></script>
     
+ 
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/animate.css">
@@ -19,6 +20,7 @@ session_start();
 	<script src="js/jquery.scrollTo.min.js" type="text/javascript"></script> 
     <script src="js/wow.min.js" type="text/javascript"></script>
     <script src="main.js"></script> 
+
 
 <!-- scroll function -->
 <script type="text/javascript">
@@ -60,14 +62,14 @@ new WOW().init();
 
 <!--============ MENU ============-->
 
-<div class="panel panel-info" style="font-family:Economica-bold; margin-left: 80px; margin-right: 80px;">
-          <div class="panel-heading">Products</div>
+<div class="panel panel-info" style="font-family:Economica-bold; margin-left: 80px; margin-right: 80px; line-height: 15px;background-color: blue; background:url(../images/www3.jpg);">
+          <div class="panel-heading" style="text-align: center; font-size: 40px; color: white; background-color: white; background:url(../images/www3.jpg); line-height: 30px">Menu</div>
           <div class="panel-body">
             <div id="get_product" >
               <!--Here we get product jquery Ajax Request-->
             </div>
           </div>
-          <div class="panel-footer">&copy; 2016</div>
+          <div class="panel-footer">&copy; MASTERGRILL</div>
 </div>
 
 
